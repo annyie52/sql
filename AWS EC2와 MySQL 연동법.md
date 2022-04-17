@@ -36,8 +36,8 @@
 ## EC2에 MySQL 설치 및 설정하기
 
 ```
-ubuntu@ip-<YOUR PRIVATE IP>:~$ chmod 400 my-sql22.pem
-ubuntu@ip-<YOUR PRIVATE IP>:~$ ssh -i "my-sql22.pem" ubuntu@ec2-3-37-129-46.ap-northeast-2.compute.amazonaws.com
+ubuntu@ip-<YOUR PRIVATE IP>:~$ chmod 400 `키 페어 파일.pem`
+ubuntu@ip-<YOUR PRIVATE IP>:~$ ssh -i "키 페어 파일.pem" ubuntu@ec2-3-37-129-46.ap-northeast-2.compute.amazonaws.com
 
 # 최신 버전 프로그램을 다운하기 위해 apt-get 업데이트
 ubuntu@ip-<YOUR PRIVATE IP>:~$ sudo apt update
